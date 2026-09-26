@@ -1,0 +1,359 @@
+{
+  "analyzed_source_revision": "deceb449133f8bcc7fb4829e4fc167b483eef3a2",
+  "analyzed_source_tree": "d039dbb6f4cc48f9c2160583d18531a604a1c114",
+  "api_sha256": "d4500a93f616afd21d40fd9e2d5970a3353d3cc1443b8ee00391815722c7821c",
+  "docgen_revision": "97d4ecdfc8e09e7f511724c25e303d448de6a3db",
+  "format": 2,
+  "generator": "scripts/generate_api.py",
+  "inputs": {
+    "IwasawaModules.lean": "246157cbd7e6e90c5edba3309950e9399bbc0de533e3cd13a5da4349b0392833",
+    "IwasawaModules/CompletedGroupAlgebra/Basic.lean": "99a12122e47c37bfbb913c8faeebe697db5bd9af4b09386f1a6e26705b618f39",
+    "IwasawaModules/CompletedGroupAlgebra/Compactness.lean": "ce36f43453ad2a2249ade1247b9fe61343dc95935425c69a03fcb9ad4370397d",
+    "IwasawaModules/CompletedGroupAlgebra/Completeness.lean": "272590eb1859d66fdbc036f3b649ff90ad10974ece58727020903ffa5a04cb15",
+    "IwasawaModules/CompletedGroupAlgebra/Separation.lean": "12fa0f1c3d7242ffb3abbe9023802820e21c8f891e4a7a09f52039e3c3f0d48f",
+    "IwasawaModules/CompletedGroupAlgebra/Topology.lean": "06c8deb3d460f78b26efc13a76f649c9f21ea7ce4865c7fc014a28562ffb64eb",
+    "IwasawaModules/PseudoIsomorphism/Basic.lean": "371bd4997b9e561a67e81db1de9309e8f5c4b27ce59ce57791e1d5aa863f41de",
+    "IwasawaModules/PseudoIsomorphism/LinearMap.lean": "ee436362a2b31a7bb175d7267707e480fd17a04a1b88810214cf2579ef4b7005",
+    "IwasawaModulesTests.lean": "8a0592e7268a6ec062b4a6ced6b3599564754fc3cd3b030a3b2a22250ecc131f",
+    "IwasawaModulesTests/DirectAPI.lean": "2a5ff40e5253f2109c50d02c3ce68ee35faf197ef89174a926460e911d4f1631",
+    "IwasawaModulesTests/RootAPI.lean": "abf65dbd4a53bfa59acecac757f8bd807946267668274cb934f75428de659858",
+    "lake-manifest.json": "8326635acea81d37f4d3b87363ded441be9b8503e939c71a60fd283ce1bdb880",
+    "lakefile.toml": "ec50272d45039e4f4c2c1e5bfb8e068f0206249634281cb93baeabb41134cb05",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+  },
+  "instance_declarations": [
+    "CompletedGroupAlgebra.instTopologicalSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instIsTopologicalRingFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instTopologicalSpace",
+    "CompletedGroupAlgebra.instIsTopologicalRing",
+    "CompletedGroupAlgebra.instT2SpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instT2Space",
+    "CompletedGroupAlgebra.instCompactSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instCompactSpace",
+    "CompletedGroupAlgebra.instUniformSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instIsUniformAddGroupFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instCompleteSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instUniformSpace",
+    "CompletedGroupAlgebra.instIsUniformAddGroup",
+    "CompletedGroupAlgebra.instCompleteSpace"
+  ],
+  "module_inventory": {
+    "IwasawaModules": {
+      "declarations": 0,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 0,
+        "instance": 0,
+        "theorem": 0
+      }
+    },
+    "IwasawaModules.CompletedGroupAlgebra.Basic": {
+      "declarations": 10,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 6,
+        "instance": 0,
+        "theorem": 4
+      }
+    },
+    "IwasawaModules.CompletedGroupAlgebra.Compactness": {
+      "declarations": 3,
+      "instance_rows": 2,
+      "kinds": {
+        "def": 0,
+        "instance": 2,
+        "theorem": 1
+      }
+    },
+    "IwasawaModules.CompletedGroupAlgebra.Completeness": {
+      "declarations": 10,
+      "instance_rows": 6,
+      "kinds": {
+        "def": 2,
+        "instance": 6,
+        "theorem": 2
+      }
+    },
+    "IwasawaModules.CompletedGroupAlgebra.Separation": {
+      "declarations": 2,
+      "instance_rows": 2,
+      "kinds": {
+        "def": 0,
+        "instance": 2,
+        "theorem": 0
+      }
+    },
+    "IwasawaModules.CompletedGroupAlgebra.Topology": {
+      "declarations": 12,
+      "instance_rows": 4,
+      "kinds": {
+        "def": 6,
+        "instance": 4,
+        "theorem": 2
+      }
+    },
+    "IwasawaModules.PseudoIsomorphism.Basic": {
+      "declarations": 9,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 1,
+        "instance": 0,
+        "theorem": 8
+      }
+    },
+    "IwasawaModules.PseudoIsomorphism.LinearMap": {
+      "declarations": 8,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 1,
+        "instance": 0,
+        "theorem": 7
+      }
+    },
+    "IwasawaModulesTests": {
+      "declarations": 0,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 0,
+        "instance": 0,
+        "theorem": 0
+      }
+    },
+    "IwasawaModulesTests.DirectAPI": {
+      "declarations": 0,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 0,
+        "instance": 0,
+        "theorem": 0
+      }
+    },
+    "IwasawaModulesTests.RootAPI": {
+      "declarations": 0,
+      "instance_rows": 0,
+      "kinds": {
+        "def": 0,
+        "instance": 0,
+        "theorem": 0
+      }
+    }
+  },
+  "modules": [
+    "IwasawaModules.PseudoIsomorphism.Basic",
+    "IwasawaModules.PseudoIsomorphism.LinearMap",
+    "IwasawaModules.CompletedGroupAlgebra.Basic",
+    "IwasawaModules.CompletedGroupAlgebra.Topology",
+    "IwasawaModules.CompletedGroupAlgebra.Separation",
+    "IwasawaModules.CompletedGroupAlgebra.Compactness",
+    "IwasawaModules.CompletedGroupAlgebra.Completeness",
+    "IwasawaModules",
+    "IwasawaModulesTests.RootAPI",
+    "IwasawaModulesTests.DirectAPI",
+    "IwasawaModulesTests"
+  ],
+  "native_instance_tables": {
+    "IwasawaModules": [],
+    "IwasawaModules.CompletedGroupAlgebra.Basic": [],
+    "IwasawaModules.CompletedGroupAlgebra.Compactness": [
+      {
+        "className": "CompactSpace",
+        "name": "CompletedGroupAlgebra.instCompactSpaceFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "CompactSpace",
+        "name": "CompletedGroupAlgebra.instCompactSpace",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      }
+    ],
+    "IwasawaModules.CompletedGroupAlgebra.Completeness": [
+      {
+        "className": "UniformSpace",
+        "name": "CompletedGroupAlgebra.instUniformSpaceFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "IsUniformAddGroup",
+        "name": "CompletedGroupAlgebra.instIsUniformAddGroupFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "CompleteSpace",
+        "name": "CompletedGroupAlgebra.instCompleteSpaceFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "UniformSpace",
+        "name": "CompletedGroupAlgebra.instUniformSpace",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      },
+      {
+        "className": "IsUniformAddGroup",
+        "name": "CompletedGroupAlgebra.instIsUniformAddGroup",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      },
+      {
+        "className": "CompleteSpace",
+        "name": "CompletedGroupAlgebra.instCompleteSpace",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      }
+    ],
+    "IwasawaModules.CompletedGroupAlgebra.Separation": [
+      {
+        "className": "T2Space",
+        "name": "CompletedGroupAlgebra.instT2SpaceFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "T2Space",
+        "name": "CompletedGroupAlgebra.instT2Space",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      }
+    ],
+    "IwasawaModules.CompletedGroupAlgebra.Topology": [
+      {
+        "className": "TopologicalSpace",
+        "name": "CompletedGroupAlgebra.instTopologicalSpaceFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "IsTopologicalRing",
+        "name": "CompletedGroupAlgebra.instIsTopologicalRingFiniteGroupAlgebra",
+        "typeNames": [
+          "MonoidAlgebra"
+        ]
+      },
+      {
+        "className": "TopologicalSpace",
+        "name": "CompletedGroupAlgebra.instTopologicalSpace",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      },
+      {
+        "className": "IsTopologicalRing",
+        "name": "CompletedGroupAlgebra.instIsTopologicalRing",
+        "typeNames": [
+          "RingCat.carrier"
+        ]
+      }
+    ],
+    "IwasawaModules.PseudoIsomorphism.Basic": [],
+    "IwasawaModules.PseudoIsomorphism.LinearMap": [],
+    "IwasawaModulesTests": [],
+    "IwasawaModulesTests.DirectAPI": [],
+    "IwasawaModulesTests.RootAPI": []
+  },
+  "native_record_sha256": {
+    "IwasawaModules": "9e0b3c55e256951c9a29a06aafb6788cfbbf2548e29893dddcf08294817e1101",
+    "IwasawaModules.CompletedGroupAlgebra.Basic": "47c326dafca920f19f54a34faf6188c84bd95f0172c97c3f42a611a9cff3a9c6",
+    "IwasawaModules.CompletedGroupAlgebra.Compactness": "03f37b750ac7a62680760bd227579077a0d91b03c77dc0ee5544bafc86a1e5f2",
+    "IwasawaModules.CompletedGroupAlgebra.Completeness": "88659c1558ede2259746277fae2e168c90e8ff8d290e59f29c3b53fde0189da5",
+    "IwasawaModules.CompletedGroupAlgebra.Separation": "482c8896eb801528be0c062055e85cfcd1b535bd30a9353cb182bfa62cbe64bd",
+    "IwasawaModules.CompletedGroupAlgebra.Topology": "c91721381c0d2b657cc3f0fecfa3059699b61d2491b7a5b135439909834b54f6",
+    "IwasawaModules.PseudoIsomorphism.Basic": "d4d3f35c2c0dda717882eec297e93d5162c9183e6420704a8d610e2898a2ce57",
+    "IwasawaModules.PseudoIsomorphism.LinearMap": "a7059462de2544e7453928714299395ac82716c5393f73d62b2b4753eed1737e",
+    "IwasawaModulesTests": "f3720464b12a257347404b53d5668a03db0f363f0abedef0a6da9fc5f0533330",
+    "IwasawaModulesTests.DirectAPI": "6a896953f3b06c786d41cb1e71983eba02eb612a2b84256fa39bd2238b41ef76",
+    "IwasawaModulesTests.RootAPI": "99809b21d26908ba40f9f3cfe84c4c1fb838dc321fcdf7eaee26f187ab83c5e8"
+  },
+  "normalized_record_sha256": {
+    "IwasawaModules": "9e0b3c55e256951c9a29a06aafb6788cfbbf2548e29893dddcf08294817e1101",
+    "IwasawaModules.CompletedGroupAlgebra.Basic": "47c326dafca920f19f54a34faf6188c84bd95f0172c97c3f42a611a9cff3a9c6",
+    "IwasawaModules.CompletedGroupAlgebra.Compactness": "03f37b750ac7a62680760bd227579077a0d91b03c77dc0ee5544bafc86a1e5f2",
+    "IwasawaModules.CompletedGroupAlgebra.Completeness": "88659c1558ede2259746277fae2e168c90e8ff8d290e59f29c3b53fde0189da5",
+    "IwasawaModules.CompletedGroupAlgebra.Separation": "482c8896eb801528be0c062055e85cfcd1b535bd30a9353cb182bfa62cbe64bd",
+    "IwasawaModules.CompletedGroupAlgebra.Topology": "c91721381c0d2b657cc3f0fecfa3059699b61d2491b7a5b135439909834b54f6",
+    "IwasawaModules.PseudoIsomorphism.Basic": "d4d3f35c2c0dda717882eec297e93d5162c9183e6420704a8d610e2898a2ce57",
+    "IwasawaModules.PseudoIsomorphism.LinearMap": "a7059462de2544e7453928714299395ac82716c5393f73d62b2b4753eed1737e",
+    "IwasawaModulesTests": "f3720464b12a257347404b53d5668a03db0f363f0abedef0a6da9fc5f0533330",
+    "IwasawaModulesTests.DirectAPI": "6a896953f3b06c786d41cb1e71983eba02eb612a2b84256fa39bd2238b41ef76",
+    "IwasawaModulesTests.RootAPI": "99809b21d26908ba40f9f3cfe84c4c1fb838dc321fcdf7eaee26f187ab83c5e8"
+  },
+  "production_declarations": [
+    "LinearEquiv.isPseudoNull_iff",
+    "Module.isPseudoNull_iff_submodule_quotient",
+    "Module.isPseudoNull_iff_of_exact",
+    "Module.IsPseudoNull.of_exact",
+    "Module.IsPseudoNull.of_surjective",
+    "Module.IsPseudoNull.of_injective",
+    "Module.IsPseudoNull.of_subsingleton",
+    "Module.isPseudoNull_iff_localizedModule_subsingleton",
+    "Module.IsPseudoNull",
+    "LinearEquiv.isPseudoIsomorphism",
+    "LinearMap.IsPseudoIsomorphism.comp",
+    "LinearMap.isPseudoIsomorphism_id",
+    "LinearMap.IsPseudoIsomorphism.of_bijective",
+    "LinearMap.isPseudoIsomorphism_iff_localizedModule_map_bijective",
+    "LinearMap.isPseudoIsomorphism_iff_localizedModule_subsingleton",
+    "LinearMap.localizedMap_injective_iff_subsingleton_localized_ker",
+    "LinearMap.IsPseudoIsomorphism",
+    "CompletedGroupAlgebra.proj_compatibility",
+    "CompletedGroupAlgebra.proj_ofMonoidAlgebra",
+    "CompletedGroupAlgebra.ofMonoidAlgebra",
+    "CompletedGroupAlgebra.ordinaryCone",
+    "CompletedGroupAlgebra.ext_iff",
+    "CompletedGroupAlgebra.ext",
+    "CompletedGroupAlgebra.proj",
+    "CompletedGroupAlgebra",
+    "CompletedGroupAlgebra.finiteQuotientSystem",
+    "CompletedGroupAlgebra.monoidAlgebraFunctor",
+    "CompletedGroupAlgebra.continuous_iff_proj",
+    "CompletedGroupAlgebra.continuous_proj",
+    "CompletedGroupAlgebra.instIsTopologicalRing",
+    "CompletedGroupAlgebra.instTopologicalSpace",
+    "CompletedGroupAlgebra.ringTopology",
+    "CompletedGroupAlgebra.inverseLimitTopology",
+    "CompletedGroupAlgebra.instIsTopologicalRingFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.finiteGroupAlgebraRingTopology",
+    "CompletedGroupAlgebra.finiteGroupAlgebraHomeomorph",
+    "CompletedGroupAlgebra.instTopologicalSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.finiteGroupAlgebraTopology",
+    "CompletedGroupAlgebra.finiteGroupAlgebraCoefficients",
+    "CompletedGroupAlgebra.instT2Space",
+    "CompletedGroupAlgebra.instT2SpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instCompactSpace",
+    "CompletedGroupAlgebra.instCompactSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.continuous_mapDomainRingHom",
+    "CompletedGroupAlgebra.instCompleteSpace",
+    "CompletedGroupAlgebra.instIsUniformAddGroup",
+    "CompletedGroupAlgebra.instUniformSpace",
+    "CompletedGroupAlgebra.completedGroupAlgebraUniformSpace_toTopologicalSpace",
+    "CompletedGroupAlgebra.completedGroupAlgebraUniformSpace",
+    "CompletedGroupAlgebra.instCompleteSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instIsUniformAddGroupFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.instUniformSpaceFiniteGroupAlgebra",
+    "CompletedGroupAlgebra.finiteGroupAlgebraUniformSpace_toTopologicalSpace",
+    "CompletedGroupAlgebra.finiteGroupAlgebraUniformSpace"
+  ],
+  "proof_certification": false,
+  "public_client_declarations": [],
+  "release_acceptance": false,
+  "undocumented_count": 2,
+  "undocumented_declarations": [
+    "CompletedGroupAlgebra.ext_iff",
+    "CompletedGroupAlgebra.proj_ofMonoidAlgebra"
+  ]
+}
