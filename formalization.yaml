@@ -17,25 +17,21 @@ sources:
     authors:
       - Beacon
     contributors:
-      - name: Formal Frontier worker-b
-        role: Public client tests and release-readiness documentation and metadata
-      - name: Formal Frontier worker-b (Task hive-request-5fc39d37ccb1adb18e0c62309771c4ccbe2140fa)
-        role: Native API documentation, original catalogue descriptions and adapted generator/tests
-    id: FormalFrontier/iwasawa-modules development lineage, mathematical commits for PRs 2–10
+      - name: Formal Frontier Agents
+        role: Separate contribution of public client tests, configuration, metadata and documentation
+      - name: Formal Frontier Agents
+        role: Distinct contribution of native API reference, original catalogue descriptions and adapted generator/tests
+    id: FormalFrontier/iwasawa-modules original mathematical Lean bridges
     type: original-proof
     relationship: independently-proves
     location: IwasawaModules/PseudoIsomorphism and IwasawaModules/CompletedGroupAlgebra
     note: >-
-      Beacon's original Lean expression assembles mathlib APIs; this repository
-      ships no excerpts from mathematical reference texts. The module-system
-      precursor and tests are later original project contributions, not a
-      claim of independent source-level formalization or release acceptance.
-      Beacon's later lint successor removes unused assumptions and adds
-      coefficient-equivalence clients without an index group structure;
-      the public positional-argument change is documented in the README.
-      Independent ordinary PR 11 review and Beacon's development-main acceptance
-      apply to that mathematical/module/client input, not the later native docs
-      or full private/stored-body release.
+      Beacon's original Lean bridge proofs assemble imported mathlib APIs;
+      subsequent original project contributions include native modules, public
+      test clients, lint cleanup and coefficientwise clients with no index-group
+      assumption. The positional-argument change is documented in the README.
+      No excerpts from mathematical reference texts ship here, and this entry
+      makes no source-coverage claim.
     license: Apache-2.0
     author_endorsement: participated
   - title: mathlib4
@@ -74,11 +70,11 @@ classification:
 status:
   scope: >-
     Reusable generic foundation only, not the full Iwasawa-module roadmap or
-    a source-formalization completion claim. Ordinary development PR 11 has
-    independent review and maintainer acceptance at source input
-    deceb449133f8bcc7fb4829e4fc167b483eef3a2. Native documentation is
-    bound to that frozen source/pin input; a later exact documentation candidate
-    requires its own review, distinct from any full release acceptance record.
+    a source-formalization completion claim. The native API catalogue is bound
+    to the unchanged mathematical and dependency inputs identified by
+    deceb449133f8bcc7fb4829e4fc167b483eef3a2, not to this document's
+    release status. Independent review and required build/standard-axiom
+    evidence are tied to exact candidates in the separate release record.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: [propext, Classical.choice, Quot.sound]
@@ -105,23 +101,22 @@ automation:
     - method: agent
       framework: AI-assisted Lean authoring with pinned Lake and mathlib
       tool_setup: >-
-        Original Beacon code contributions and an earlier bounded worker-b
-        client/metadata unit; elaboration, direct clients, independently
-        reviewed ordinary PR 11, and two separately retained native doc-gen4
-        SQLite/raw-record runs for the frozen eleven-module source input.
+        Beacon's original bridges, native-module and lint contributions;
+        independently contributed public clients and metadata. The default
+        build checks production and test roots with pinned Lean/mathlib.
+        Separately retained native doc-gen4 SQLite/raw-record runs supplied
+        the eleven-module API catalogue, not a private-proof census.
       prompting_notes: >-
         AI agents assisted with original construction, proof search, module
         migration, testing and documentation. Human/operator authorization
         for verified original project contributions does not assign copyright
         ownership or clear third-party reuse.
   notes: >-
-    Original mathematical and ordinary module/test contributions were
-    independently reviewed as development artifacts. The native-docs adaptation
-    builds on accepted finite-group-tate-cohomology 61577f7cf2e02715f621a724aa692921ab6bbad9,
-    itself adapted from polynomial-root-stability 95ac896f81a3190b2634a4246a3e924d2a267a61
-    and ideal-completion f0c8c34386109116e4912fb425a8ad15d9dc42a4.
-    Generator expression credit is detailed in docs/README.md, not a claim of
-    release proof certification.
+    Mathematical and module/test contributions received independent review.
+    The adapted native-documentation generator draws on the finite-group Tate
+    cohomology, polynomial-root-stability and Anchor ideal-completion adapters;
+    expression credit and the bounds of public API documentation are explained
+    in docs/README.md. Exact release decisions are recorded separately.
 
 fidelity:
   divergences: >-
@@ -130,24 +125,23 @@ fidelity:
     asserted. Later symmetry/reversal, growth and adjoints remain open.
 
 review:
-  status: agent-reviewed ordinary development input; later documentation/release decisions externally recorded
+  status: independently reviewed published foundation; successor candidates require exact review
   reviewers:
     - Prism, Atlas, Lattice and Anchor (historical individual mathematical contributions)
-    - Formal Frontier worker-a (ordinary PR 11 exact mathematical/module/client input)
+    - Independent Formal Frontier reviewers (development and published-release candidates)
   notes: >-
     Prism, Atlas, Lattice and Anchor reviewed earlier original mathematical
-    contributions. Independent worker-a approval 3010 and Beacon's ordinary
-    acceptance/integration of PR 11 apply to exact development-main source
-    deceb449133f8bcc7fb4829e4fc167b483eef3a2. As of this dated
-    September 26, 2026 documentation preparation, the later docs and complete
-    private/generated/stored-body, rights and release gates were not accepted;
-    later exact-commit records outside this file determine their status. Schema
-    validity and generated public documentation are not proof or release approval.
+    contributions. Separate independent reviews addressed the original
+    development and subsequent published snapshots. Each successor requires
+    its own exact-candidate review and applicable build and complete transitive
+    standard-axiom evidence, including private and generated declarations.
+    Schema validity or public API documentation alone is not acceptance.
 
 acknowledgements: >-
-  Original Lean proof contributor Beacon; separate historical reviewers
-  Prism, Atlas, Lattice and Anchor; public readiness client and documentation
-  contributor formalization-worker-b, and distinct native documentation Task
-  hive-request-5fc39d37ccb1adb18e0c62309771c4ccbe2140fa / UID
-  645fd9e7-83b8-4288-ac17-54d375560cd6. Upstream mathlib authors retain
-  credit for imported APIs. No copyright holder is asserted by these roles.
+  Beacon contributed original mathematical Lean bridges, native modules, lint
+  and client improvements; other Formal Frontier contributors separately supplied
+  public clients/metadata and the native API catalogue/adapter. Prism, Atlas,
+  Lattice and Anchor reviewed individual earlier mathematical contributions;
+  independent reviewers assessed later candidates. AI agents assisted authoring.
+  Upstream mathlib authors retain credit for imported APIs. Contributor and
+  reviewer roles do not assert copyright ownership.

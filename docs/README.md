@@ -42,12 +42,12 @@ are frozen; a separate style-header warning asking for an “All rights
 reserved” copyright line is not permission to invent ownership or rewrite
 the header as part of these docs.
 
-Supplemental source-style checks retained 27 header diagnostics across the nine
+Historical supplemental source-style checks retained 27 header diagnostics across the nine
 declaration-bearing leaves and two `privateModule` diagnostics on the test leaves.
 The latter deliberately provide build-checked private clients, not a public test
 API; making them public merely to silence this diagnostic would change that
-boundary. These are proposed narrow convention departures, subject to independent
-review, not linter passes. Strict source options passed on the production reexport
+boundary. These historical findings and their release-review dispositions are
+not new linter passes. Strict source options passed on the production reexport
 root. The import-only test root does not register `linter.mathlibStandardSet`;
 its first strict-option invocation failed, while the documented weak-option
 invocation passed. Weak options do not establish that an unregistered linter ran.
@@ -63,7 +63,8 @@ eleven byte-pinned external raw native records. Their digests and normalized
 JSON digests appear in the [manifest](api-manifest.json). The analyzed commit
 and tree are labels for these fixed **mathematical/pinned inputs**, not claims
 that a later documentation commit or a source-only archive has the old Git
-object. Final exact-candidate acceptance, if any, is recorded externally.
+object. Each published snapshot has its own exact release record; a new
+documentation candidate needs its own independent review and acceptance.
 
 The separately built upstream `leanprover/doc-gen4` source revision is
 `97d4ecdfc8e09e7f511724c25e303d448de6a3db`, tree
@@ -80,8 +81,10 @@ permission to rebuild mathlib from source. One bounded build recipe is:
 elan toolchain install "$(cat lean-toolchain)"
 lake exe cache get
 LEAN_NUM_THREADS=2 lake --wfail build
-LEAN_NUM_THREADS=2 lake --wfail build IwasawaModules IwasawaModulesTests
 ```
+
+The default build already includes both production and test roots. An explicit
+second-root build is an optional diagnostic, not a duplicate required build.
 
 In a separate doc-gen4 checkout, verify the tool revision/tree and run
 `lake build doc-gen4` there. If `cc` is not in your shell's `PATH`, use
@@ -159,30 +162,32 @@ observe local cgroup/process use; don't translate child RSS into a memory
 limit. Earlier selected checker calls failed with an artificial **9 GB
 virtual-address-space** (`ulimit -v`) ceiling on mmap; this does not establish
 a 9 GB physical-RAM requirement or proof failure. Build success and native
-documentation do not replace complete raw/private/stored-body checks.
+documentation do not replace the complete transitive standard-axiom audit,
+including private and generated declarations, or independent review. Separate
+stored-proof replay is not a release prerequisite.
 
-The [README](../README.md#reproduce) also records a separate measured ordinary/
-`-T0` downstream-use baseline for its exact Lean example, with cache, thread,
-watchdog and sampling context. Beacon added that baseline and the lifecycle,
-resource and diagnostic clarifications here; the eleven Lean inputs, three pins,
-native records, generated API and adapter remain unchanged.
+The separate September 26 warm-use baseline for the [README's Lean example](../README.md#reproduce)
+after cache and module builds measured **2.880 seconds** ordinary and **2.892
+seconds** with `-T0` using `lake env lean -j1 -DwarningAsError=true`, one Lean
+runtime thread and a **23 GiB cgroup**. Sampled process-group RSS was
+**3,713,712,128 / 3,747,016,704 bytes** respectively. Both stdout/stderr were
+empty; a 300-second timeout, 18 GiB sampled-RSS watchdog and 64 GiB virtual
+address ceiling were configured bounds, not observed consumption or portable
+minima. These timings do not establish a speedup over an earlier release.
 
 ## Expression, origins and rights
 
-Source Lean/docstring expression belongs to the original Iwasawa Modules
-contributors identified in [the project README](../README.md). This adapter,
-its tests and original catalogue descriptions are authored here by worker-b
-Task `hive-request-5fc39d37ccb1adb18e0c62309771c4ccbe2140fa`, UID
-`645fd9e7-83b8-4288-ac17-54d375560cd6`. The expression is adapted under
-Apache-2.0 from accepted finite-group-tate-cohomology
-`61577f7cf2e02715f621a724aa692921ab6bbad9`, authored by worker-b Task
-`381dc6f93292eb39ea2d5b25f09baacdc8b20d9e`, UID
-`cd8c84f8-2dbf-4399-9c70-1de364ffa99f`; that donor adapted accepted
-polynomial-root-stability `95ac896f81a3190b2634a4246a3e924d2a267a61`
-and Anchor's ideal-completion `f0c8c34386109116e4912fb425a8ad15d9dc42a4`.
-The [project LICENSE](../LICENSE) remains unchanged; collective **Authors:
-Formal Frontier Agents** and named roles credit contribution without claiming
-ownership from Git authorship. Imported mathlib APIs and the external doc-gen4
-tool retain their original upstream notices. No reference book text, copied
-third-party code or native website assets are bundled. Full assembled rights,
-reachable-history and eventual release approval remain independent checks.
+The original Iwasawa Modules Lean proofs/docstrings and separately contributed
+clients are credited in the [project README](../README.md#provenance-and-release-status).
+The native adapter, its tests and two original catalogue explanations are a
+distinct Formal Frontier contribution. Their expression was adapted under
+Apache-2.0 from the accepted finite-group Tate cohomology adapter, itself
+drawing on polynomial-root-stability and Anchor's ideal-completion adapter.
+The donor's contributor retains credit for that earlier expression; this
+adaptation does not attribute the Iwasawa catalogue to that donor. The
+[project LICENSE](../LICENSE) remains unchanged, and collective **Authors:
+Formal Frontier Agents** and named roles do not assert copyright ownership.
+Imported mathlib APIs and the external doc-gen4 tool retain their upstream
+notices. No book text, third-party proof code or native website assets are
+bundled. Exact successor rights, history and release acceptance are separate
+from this API catalogue.

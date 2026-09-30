@@ -3,13 +3,11 @@
 # Authors: Formal Frontier Agents
 """Data-only native-record corruption controls, not a proof or release audit.
 
-Adapted by Task hive-request-5fc39d37ccb1adb18e0c62309771c4ccbe2140fa
-(UID 645fd9e7-83b8-4288-ac17-54d375560cd6) from finite-group-tate-cohomology
-61577f7cf2e02715f621a724aa692921ab6bbad9 (Task
-381dc6f93292eb39ea2d5b25f09baacdc8b20d9e / UID
-cd8c84f8-2dbf-4399-9c70-1de364ffa99f), itself adapted from
-polynomial-root-stability 95ac896f81a3190b2634a4246a3e924d2a267a61
-and ideal-completion f0c8c34386109116e4912fb425a8ad15d9dc42a4.
+Adapted for Iwasawa Modules from the accepted finite-group Tate cohomology
+adapter, itself drawing on polynomial-root-stability and Anchor's
+ideal-completion adapter. The native catalogue and Iwasawa adapter/tests are
+a distinct Formal Frontier contribution; the donor retains credit for its
+earlier expression. See docs/README.md for origins and limitations.
 Supply eleven retained genuine native records; none is shipped by these tests.
 """
 
@@ -230,9 +228,21 @@ class NativeControls(unittest.TestCase):
         tracked = subprocess.run(["git", "-C", str(ROOT), "ls-files", "-z"],
                                  capture_output=True, check=True).stdout
         paths = {entry.decode() for entry in tracked.split(b"\0") if entry}
-        paths.update({"docs/API.md", "docs/README.md", "docs/api-manifest.json",
-                      "scripts/generate_api.py", "scripts/test_generate_api.py"})
-        self.assertEqual(len(paths), 23)
+        self.assertEqual(paths, {
+            ".forgejo/lean-ci.json", ".forgejo/workflows/lean-ci.yaml", ".gitignore",
+            "IwasawaModules.lean", "IwasawaModules/CompletedGroupAlgebra/Basic.lean",
+            "IwasawaModules/CompletedGroupAlgebra/Compactness.lean",
+            "IwasawaModules/CompletedGroupAlgebra/Completeness.lean",
+            "IwasawaModules/CompletedGroupAlgebra/Separation.lean",
+            "IwasawaModules/CompletedGroupAlgebra/Topology.lean",
+            "IwasawaModules/PseudoIsomorphism/Basic.lean",
+            "IwasawaModules/PseudoIsomorphism/LinearMap.lean", "IwasawaModulesTests.lean",
+            "IwasawaModulesTests/DirectAPI.lean", "IwasawaModulesTests/RootAPI.lean",
+            "LICENSE", "README.md", "docs/API.md", "docs/README.md",
+            "docs/api-manifest.json", "formalization.yaml", "lake-manifest.json",
+            "lakefile.toml", "lean-toolchain", "scripts/generate_api.py",
+            "scripts/test_generate_api.py",
+        })
         with tempfile.TemporaryDirectory() as temporary:
             isolated = Path(temporary) / "isolated"
             isolated.mkdir()

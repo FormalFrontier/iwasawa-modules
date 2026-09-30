@@ -3,13 +3,11 @@
 # Authors: Formal Frontier Agents
 """Bounded native doc-gen4 reference for the Iwasawa Modules public surface.
 
-Adapted by Task hive-request-5fc39d37ccb1adb18e0c62309771c4ccbe2140fa
-(UID 645fd9e7-83b8-4288-ac17-54d375560cd6) from finite-group-tate-cohomology
-61577f7cf2e02715f621a724aa692921ab6bbad9 (Task
-381dc6f93292eb39ea2d5b25f09baacdc8b20d9e / UID
-cd8c84f8-2dbf-4399-9c70-1de364ffa99f), itself adapted from
-polynomial-root-stability 95ac896f81a3190b2634a4246a3e924d2a267a61
-and Anchor's ideal-completion f0c8c34386109116e4912fb425a8ad15d9dc42a4.
+Adapted for Iwasawa Modules from the accepted finite-group Tate cohomology
+adapter, itself drawing on polynomial-root-stability and Anchor's
+ideal-completion adapter. The native catalogue and Iwasawa adapter/tests are
+a distinct Formal Frontier contribution; the donor retains credit for its
+earlier expression. See docs/README.md for origins and limitations.
 Records are documentation input, not a proof, private-proof census, coverage or
 release certificate.
 """
