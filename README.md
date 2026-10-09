@@ -72,6 +72,23 @@ clients. This public API catalogue is **not** a private-proof census or a
 source-coverage finding; exact release review and proof-audit evidence are
 recorded separately.
 
+## Using the library
+
+Add the library to your `lakefile.toml`:
+
+```toml
+[[require]]
+name = "iwasawa-modules"
+git = "https://github.com/FormalFrontier/iwasawa-modules.git"
+rev = "main"
+```
+
+GitHub `main` contains reviewed releases. Lake resolves the latest release when
+first adding or updating the dependency; `lake-manifest.json` retains the resolved
+commit until the next update. To pin a particular release, replace `main` with
+its full commit hash. Dependencies between libraries use full published-release
+commit pins.
+
 Import `IwasawaModules` for all public declarations or only the needed leaf:
 
 ```lean
@@ -127,16 +144,15 @@ tests prove their client statements, rather than only checking types. Historical
 build and warm-client timing, resource bounds and native extraction details are
 in the [reproduction guide](docs/README.md); none is a current memory minimum.
 
-## Provenance and release status
+## Credits and references
 
 Beacon contributed the original mathematical Lean bridges, proof-preserving
 native-module adaptation, lint cleanup and no-group coefficient clients, as well
 as later documentation and usage measurements. Separate Formal Frontier
 contributors supplied public test clients, configuration, metadata and initial
 documentation, and the native API catalogue, adapted generator and its tests.
-Prism, Atlas, Lattice and Anchor independently reviewed individual historical
-mathematical contributions; later development and initial-release candidates
-also received independent review. AI agents assisted authoring and review.
+Prism, Atlas, Lattice and Anchor provided independent mathematical review of
+individual contributions. AI agents assisted authoring and review.
 The Lean implementations combine **original project bridge proofs** with imported
 mathlib [module support](https://github.com/leanprover-community/mathlib4/blob/e37d88a26f3791ed5a93daa1f949af1021b8d103/Mathlib/RingTheory/Support.lean),
 [localized-module maps](https://github.com/leanprover-community/mathlib4/blob/e37d88a26f3791ed5a93daa1f949af1021b8d103/Mathlib/Algebra/Module/LocalizedModule/Submodule.lean),
@@ -147,11 +163,7 @@ Neukirch–Schmidt–Wingberg, *Cohomology of Number Fields* (corrected second
 edition, May 2020), Chapter V §§1, 3, 5, motivates a wider theory only; no
 book text, proof or asset is included or claimed formalized.
 
-The original public snapshot and a later CI-maintenance successor have been
-independently reviewed and published. The exact release record governs each
-published commit, transitive standard-axiom audit (including private/generated
-declarations), rights decision and mirror verification; this README does not
-approve a new candidate or decide source coverage. The [LICENSE](LICENSE) and
-collective author credit do not assert an invented copyright holder. The native
+The [LICENSE](LICENSE) and collective author credit do not assert an invented
+copyright holder. The native
 adapter's [public lineage and rights notes](docs/README.md#expression-origins-and-rights)
 distinguish imported and adapted contributions.

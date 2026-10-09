@@ -178,7 +178,7 @@ minima. These timings do not establish a speedup over an earlier release.
 ## Expression, origins and rights
 
 The original Iwasawa Modules Lean proofs/docstrings and separately contributed
-clients are credited in the [project README](../README.md#provenance-and-release-status).
+clients are credited in the [project README](../README.md#credits-and-references).
 The native adapter, its tests and two original catalogue explanations are a
 distinct Formal Frontier contribution. Their expression was adapted under
 Apache-2.0 from the accepted finite-group Tate cohomology adapter, itself
