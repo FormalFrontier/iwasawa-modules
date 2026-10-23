@@ -4,7 +4,7 @@ Authors: Formal Frontier Agents
 -/
 module
 
-import IwasawaModules
+public import IwasawaModules
 
 /-!
 # Aggregate-root clients
@@ -15,6 +15,8 @@ separation, compactness and completeness hypotheses.
 -/
 
 set_option warningAsError true
+
+public section
 
 noncomputable section
 

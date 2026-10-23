@@ -4,9 +4,9 @@ Authors: Formal Frontier Agents
 -/
 module
 
-import IwasawaModules.PseudoIsomorphism.LinearMap
-import IwasawaModules.CompletedGroupAlgebra.Completeness
-import Mathlib.Topology.Instances.ZMod
+public import IwasawaModules.PseudoIsomorphism.LinearMap
+public import IwasawaModules.CompletedGroupAlgebra.Completeness
+public import Mathlib.Topology.Instances.ZMod
 
 /-!
 # Direct-leaf clients
@@ -16,6 +16,8 @@ The extra mathlib import supplies concrete `ZMod` coefficient fixtures.
 -/
 
 set_option warningAsError true
+
+public section
 
 noncomputable section
 
